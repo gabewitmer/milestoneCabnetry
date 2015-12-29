@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+
+<head>
+    {{ template "head.tmpl" . }}
+
+    <title>Milestone Construction LLC - Professional Home Remodeling - Other Services</title>
+
+</head>
+
+<body>
+
+    {{ template "navbar.tmpl" . }}
+
+    <div id="main">
+
+        <div id="main_inner" class="fixed">
+
+            <div id="primaryContent_columnless">
+
+                <div id="columnA_columnless">
+
+                    <h2>Other Services</h2>
+                    <br>In addition to the services listed above, we also specialize in the following. Please click on the headings for more detail.
+                    <br>
+                    <br>
+                    <table align=center>
+                        <tr>
+                            <td>
+                                <img src='static/images/decks_more.jpg'>
+                            </td>
+                            <td>
+                                <a href='/decks'>
+                                    <h2>Decks</h2>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src='static/images/windowsdoors_more.jpg'>
+                            </td>
+                            <td>
+                                <a href='/windowsDoors'>
+                                    <h2>Windows & Doors</h2>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src='static/images/flooring_more.jpg'>
+                            </td>
+                            <td>
+                                <a href='/flooring'>
+                                    <h2>Flooring</h2>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src='static/images/design_more.jpg'>
+                            </td>
+                            <td>
+                                <a href='/design'>
+                                    <h2>Design</h2>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src='static/images/build_more.jpg'>
+                            </td>
+                            <td>
+                                <a href='/build'>
+                                    <h2>Build</h2>
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+
+                    {{ template "address.tmpl" . }}
+                </div>
+
+            </div>
+
+            <br class="clear" />
+
+        </div>
+
+    </div>
+
+    {{ template "foot.tmpl" . }}
+
+</body>
+
+</html>

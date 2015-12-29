@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+
+<head>
+    {{ template "head.tmpl" . }}
+
+    <title>Milestone Construction LLC - Professional Home Remodeling </title>
+
+</head>
+
+<body>
+
+    {{ template "navbar.tmpl" . }}
+
+    <div id="main">
+
+        <div id="main_inner" class="fixed">
+
+            <div id="primaryContent_columnless">
+
+                <div id="columnA_columnless">
+
+                    <h2>Who We Are</h2>
+
+                    <p>
+                        <img src="static/images/homepage1.jpg" class="float-right" />We are complete remodeling contractors with a goal of bringing elegance and personality to homes all over our region. We focus on providing our customers with superior workmanship at affordable prices. We understand that a house
+                        is a huge investment that most people want to personalize as much as possible. Therefore, our specialists will meet with you, listen to your specific needs and then come up with a plan to deliver the results you desire. We care
+                        most about customer satisfaction and we strive to exceed your greatest expectations with every project we complete.</p>
+
+
+
+                    <h2>What We Do</h2>
+
+                    <p>
+                        <img src="static/images/homepage3.jpg" class="float-left" />We are a full-service renovations firm. We can design and renovate any area of your home, and coordinate all aspects of your renovation project. From our years of experience in remodeling, we can help you get the most out of virtually
+                        any size or shape of space.
+                        <br>
+                        <br>
+                    </p>
+
+                    <table>
+                        <tr>
+                            <td valign=top>
+                                Our specialties include:
+                                <ul>
+                                    <li><a href='/kitchen'>Kitchen</a></li>
+                                    <li><a href='/bath'>Bath</a></li>
+                                    <li><a href='/otherrooms'>Other Rooms</a></li>
+                                    <li><a href='/garage'>Garage</a></li>
+                                    <li><a href='/roof'>Roof</a></li>
+                                    <li><a href='/decks'>Decks</a></li>
+                                    <li><a href='/windowsDoors'>Windows & Doors</a></li>
+                                    <li><a href='/flooring'>Flooring</a></li>
+                                    <li><a href='/design'>Design</a></li>
+                                    <li><a href='/build'>Build</a></li>
+                                </ul>
+                            </td>
+                            <td align=right>
+                                <img src="static/images/homepage2.jpg">
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+
+                    {{ template "address.tmpl" . }}
+                </div>
+
+            </div>
+
+            <br class="clear" />
+
+        </div>
+
+    </div>
+
+    {{ template "foot.tmpl" . }}
+
+</body>
+
+</html>

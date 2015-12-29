@@ -1,0 +1,23 @@
+<div id="header">
+
+    <div id="header_inner" class="fixed">
+
+        <div id="logo">
+            <h1>Milestone Construction LLC</h1>
+            <h2>Professional Home Remodeling</h2>
+        </div>
+
+        <div id="menu">
+            <ul>
+                <li><a {{ if eq .page "home" }}class="active"{{ end }} href="/">Home</a></li>
+                <li><a {{ if eq .page "kitchen" }}class="active"{{ end }} href="/kitchen">Kitchen</a></li>
+                <li><a {{ if eq .page "bath" }}class="active"{{ end }} href="/bath">Bath</a></li>
+                <li><a {{ if eq .page "otherrooms" }}class="active"{{ end }} href="/otherrooms">Other Rooms</a></li>
+                <li><a {{ if eq .page "garage" }}class="active"{{ end }} href="/garage">Garage</a></li>
+                <li><a {{ if eq .page "roof" }}class="active"{{ end }} href="/roof">Roof</a></li>
+                <li><a {{ if eq .page "more" }}class="active"{{ end }} href="/more">More</a></li>
+            </ul>
+        </div>
+
+    </div>
+</div>
