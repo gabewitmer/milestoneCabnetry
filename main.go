@@ -15,7 +15,7 @@ var mux = web.NewMux()
 var tmpl = web.NewTmplCache()
 
 func main() {
-	mux.AddRoutes(home, bath, build, contact, decks, design, flooring, garage, kitchen, more, otherrooms, roof, windowsDoors)
+	mux.AddRoutes(home, bath, build, contact, decks, design, flooring, garage, kitchen, more, otherrooms, roof, windowsDoors, login)
 	mux.AddSecureRoutes(ADMIN)
 	http.ListenAndServe(":8080", mux)
 }
@@ -108,5 +108,10 @@ var windowsDoors = web.Route{"GET", "/windowsDoors", func(w http.ResponseWriter,
 	tmpl.Render(w, r, "windowsDoors.tmpl", web.Model{
 		"page": "more",
 	})
+	return
+}}
+
+var login = web.Route{"GET", "/login", func(w http.ResponseWriter, r *http.Request) {
+	tmpl.Render(w, r, "login.tmpl", web.Model{})
 	return
 }}
